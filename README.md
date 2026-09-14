@@ -1,6 +1,6 @@
 # Batch-B083--Week-2--Penetration-Testing-Reporting
 
-# Week 2 | Cybersecurity Internship | Networkwalks
+### Week 2 | Cybersecurity Internship | Networkwalks
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
 ![Type](https://img.shields.io/badge/Type-Reconnaissance-blue?style=flat)
@@ -22,6 +22,19 @@
 ---
 
 ## Modules Completed
+- `W2-Module 1` — Reconnaissance & Footprinting
+- `W2-Module 2` — DNS Enumeration
+- `W2-Module 3` — Web Technology & Server Enumeration
+- `W2-Module 4` — Web Application Firewall Detection
+- `W2-Module 5` — Network Scanning & Discovery
+
+## Phases Covered
+
+1. Reconnaissance & Information Gathering
+2. Footprinting & Enumeration
+3. Network Scanning & Discovery
+4. Analysis & Recommendations
+5. Conclusion & Documentation 
 
 ### 1. Information Gathering
 
@@ -38,9 +51,21 @@
 - DNSRecon
 - WhatWeb
 - WAFW00F
-- cURL
+- CURL
 
 Week 2 Penetration Testing Report
+
+
+## ⚠⚠ Disclaimer ⚠⚠
+
+All security testing activities documented in this repository were conducted only against systems, networks, and applications for which I had appropriate authorization or that I personally owned and controlled.
+
+The information and techniques presented in this report are intended strictly for educational, training, and authorized cybersecurity assessment purposes. They should not be used to access, scan, attack, or interfere with systems without explicit permission from the owner.
+
+I do not support or encourage unauthorized access, data theft, disruption of services, or any other illegal activity. The responsibility for how the information, commands, and techniques contained in this repository are used rests entirely with the individual using them.
+
+Unauthorized security testing may violate applicable laws and regulations and can result in legal, financial, academic, or professional consequences. Always obtain proper authorization and define the scope of testing before conducting any security assessment.
+
 
 # Introduction
 
