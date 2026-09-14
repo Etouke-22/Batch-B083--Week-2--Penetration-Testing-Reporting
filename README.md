@@ -55,7 +55,7 @@
 
 Week 2 Penetration Testing Report
 
-<!--
+<
 ## ⚠⚠ Disclaimer ⚠⚠
 
 All security testing activities documented in this repository were conducted only against systems, networks, and applications for which I had appropriate authorization or that I personally owned and controlled.
@@ -65,7 +65,7 @@ The information and techniques presented in this report are intended strictly fo
 I do not support or encourage unauthorized access, data theft, disruption of services, or any other illegal activity. The responsibility for how the information, commands, and techniques contained in this repository are used rests entirely with the individual using them.
 
 Unauthorized security testing may violate applicable laws and regulations and can result in legal, financial, academic, or professional consequences. Always obtain proper authorization and define the scope of testing before conducting any security assessment.
--->
+>
 
 # Introduction
 
@@ -114,9 +114,9 @@ Windows Command Prompt	Obtaining local network configuration
 WHOIS was used to obtain publicly available registration information associated with the authorized domain.
 
 The command used was:
-
-```whois networkwalks.com```
-
+```bash
+`whois networkwalks.com`
+```
 The output provided information such as the registrar, registration dates, domain name servers, and DNSSEC status.
 
 This information is useful during reconnaissance because it provides an initial picture of how a domain is registered and which external infrastructure is associated with it. Although registration information is not normally considered a vulnerability by itself, it can contribute to an attacker's understanding of the organization's external presence.
@@ -124,9 +124,9 @@ This information is useful during reconnaissance because it provides an initial 
 ## DNS Resolution with Nslookup
 
 Nslookup was used to determine the IP address associated with the target domain.
-
-' nslookup <authorized-domain> '
-
+```bash
+`nslookup <authorized-domain>`
+```
 
 The resulting DNS information showed the address associated with the domain and the DNS server responsible for resolving the request.
 
@@ -136,8 +136,9 @@ From a penetration-testing perspective, DNS resolution is an important early ste
 
 cURL was used to inspect the HTTP response returned by the target web server.
 
-'curl -I https://<authorized-domain>'
-
+```bash
+`curl -I https://<authorized-domain>`
+```
 
 The response provided information about the HTTP status and various response headers. Depending on the configuration of the server, these headers may reveal information about the underlying web-server software, content-management system, caching mechanisms, or other components.
 
@@ -147,8 +148,9 @@ This demonstrates why organizations should carefully consider which technical de
 
 Wafw00f was used to determine whether a Web Application Firewall (WAF) was protecting the target.
 
-'wafw00f <authorized-domain>'
-
+```bash
+`wafw00f <authorized-domain>`
+```
 
 The tool identified the WAF technology observed during the test.
 
@@ -158,7 +160,7 @@ The presence of a WAF is an important defensive control because it can inspect a
 
 DNSRecon was used to collect publicly available DNS information.
 
-'dnsrecon -d <authorized-domain>'
+`dnsrecon -d <authorized-domain>`
 
 
 The enumeration provided records associated with the domain, such as A, AAAA, MX, NS, SOA, and other available records.
@@ -169,7 +171,7 @@ DNS records can reveal information about an organization's infrastructure, inclu
 
 A web technology fingerprinting tool such as WhatWeb can also be used to identify technologies running on a website.
 
-'whatweb <authorized-domain>'
+`whatweb <authorized-domain>`
 
 
 Only results that were successfully obtained during the practical should be included in the final report. If the tool fails to produce reliable output, the failed attempt should be documented rather than presenting an assumed result.
@@ -194,7 +196,7 @@ TheHarvester was used to demonstrate passive information gathering from publicly
 
 A typical command is:
 
-'theHarvester -d <authorized-domain> -l <limit> -b <source>'
+`theHarvester -d <authorized-domain> -l <limit> -b <source>`
 
 
 The tool can collect information such as:
@@ -210,7 +212,7 @@ Autonomous System Numbers (ASNs)
 
 The first search configuration used a specific public information source.
 
-'theHarvester -d <authorized-domain> -l <limit> -b <source>'
+`theHarvester -d <authorized-domain> -l <limit> -b <source>`
 
 
 The results demonstrated that the amount of information obtained can vary considerably depending on the data source being queried.
@@ -221,7 +223,7 @@ A lack of results from one source does not necessarily mean that the target has 
 
 A broader search can be performed using multiple available sources:
 
-'theHarvester -d <authorized-domain> -l <limit> -b all'
+`theHarvester -d <authorized-domain> -l <limit> -b all`
 
 
 Using several sources can produce a substantially broader view of an organization's external footprint.
@@ -240,7 +242,7 @@ The appropriate subnet was then selected for the authorized scan.
 
 For example:
 
-'nmap -T4 -F <authorized-subnet>'
+`nmap -T4 -F <authorized-subnet>`
 
 
 Zenmap presented the scan results through a graphical interface, making it easier to identify active hosts and visualize relationships between devices.
