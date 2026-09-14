@@ -55,7 +55,7 @@
 
 Week 2 Penetration Testing Report
 
-<
+
 ## ⚠⚠ Disclaimer ⚠⚠
 
 All security testing activities documented in this repository were conducted only against systems, networks, and applications for which I had appropriate authorization or that I personally owned and controlled.
@@ -65,7 +65,7 @@ The information and techniques presented in this report are intended strictly fo
 I do not support or encourage unauthorized access, data theft, disruption of services, or any other illegal activity. The responsibility for how the information, commands, and techniques contained in this repository are used rests entirely with the individual using them.
 
 Unauthorized security testing may violate applicable laws and regulations and can result in legal, financial, academic, or professional consequences. Always obtain proper authorization and define the scope of testing before conducting any security assessment.
->
+
 
 # Introduction
 
@@ -115,7 +115,7 @@ WHOIS was used to obtain publicly available registration information associated 
 
 The command used was:
 
-[!NOTE]
+> [!NOTE]
 ```bash
 whois networkwalks.com
 ```
@@ -127,7 +127,7 @@ This information is useful during reconnaissance because it provides an initial 
 
 Nslookup was used to determine the IP address associated with the target domain.
 
-[!NOTE]
+> [!NOTE]
 ```bash
 nslookup <authorized-domain>
 ```
@@ -140,7 +140,7 @@ From a penetration-testing perspective, DNS resolution is an important early ste
 
 cURL was used to inspect the HTTP response returned by the target web server.
 
-[!NOTE]
+> [!NOTE]
 ```bash
 curl -I https://<authorized-domain>
 ```
@@ -153,7 +153,7 @@ This demonstrates why organizations should carefully consider which technical de
 
 Wafw00f was used to determine whether a Web Application Firewall (WAF) was protecting the target.
 
-[!NOTE]
+> [!NOTE]
 ```bash
 `wafw00f <authorized-domain>`
 ```
@@ -166,7 +166,7 @@ The presence of a WAF is an important defensive control because it can inspect a
 
 DNSRecon was used to collect publicly available DNS information.
 
-[!NOTE]
+> [!NOTE]
 `dnsrecon -d <authorized-domain>`
 
 
@@ -178,7 +178,7 @@ DNS records can reveal information about an organization's infrastructure, inclu
 
 A web technology fingerprinting tool such as WhatWeb can also be used to identify technologies running on a website.
 
-[!NOTE]
+> [!NOTE]
 ```bash
 whatweb <authorized-domain>
 ```
@@ -205,7 +205,7 @@ TheHarvester was used to demonstrate passive information gathering from publicly
 
 A typical command is:
 
-[!NOTE]
+> [!NOTE]
 ```bash
 theHarvester -d <authorized-domain> -l <limit> -b <source>
 ```
@@ -235,9 +235,9 @@ A lack of results from one source does not necessarily mean that the target has 
 
 A broader search can be performed using multiple available sources:
 
-[!NOTE]
+> [!NOTE]
 ```bash
-theHarvester -d <authorized-domain> -l <limit> -b all
+> theHarvester -d <authorized-domain> -l <limit> -b all
 ```
 
 
@@ -257,7 +257,7 @@ The appropriate subnet was then selected for the authorized scan.
 
 For example:
 
-[!NOTE]
+> [!NOTE]
 ```bash
 nmap -T4 -F <authorized-subnet>
 ```
