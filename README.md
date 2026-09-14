@@ -110,7 +110,7 @@ Windows Command Prompt	Obtaining local network configuration
 - WAF detection
 
 
-# Reconnaissance and Footprinting
+# PM1  Reconnaissance and Footprinting
 
 ## WHOIS Enumeration
 
@@ -158,7 +158,7 @@ Wafw00f was used to determine whether a Web Application Firewall (WAF) was prote
 
 
 ```bash
-`wafw00f networkwalks.com
+> wafw00f networkwalks.com
 ```
 
 The tool identified the WAF technology observed during the test.
@@ -185,12 +185,12 @@ A web technology fingerprinting tool such as WhatWeb can also be used to identif
 
 
 ```bash
-whatweb networkwalks.com
+> whatweb networkwalks.com
 ```
 
 Only results that were successfully obtained during the practical should be included in the final report. If the tool fails to produce reliable output, the failed attempt should be documented rather than presenting an assumed result.
 
-# Google Hacking Database Reconnaissance
+# PM2 Google Hacking Database Reconnaissance
 
 The Google Hacking Database was examined to understand how search engines can unintentionally expose publicly accessible resources.
 
@@ -204,7 +204,7 @@ From a defensive perspective, organizations should periodically examine what inf
 
 A search-engine result should also not automatically be interpreted as evidence of a vulnerability. Additional verification would be required to determine the actual security impact.
 
-# Information Gathering with theHarvester
+# PM4 Information Gathering with theHarvester
 
 TheHarvester was used to demonstrate passive information gathering from publicly available sources.
 
@@ -254,7 +254,7 @@ The results should be documented using the actual output generated during the pr
 
 It is also important to document any limitations encountered during the exercise. Some theHarvester sources may require API credentials, meaning that unavailable services can affect the quantity and completeness of the collected information.
 
-# Network Discovery with Zenmap
+# PM5 Network Discovery with Zenmap
 
 Zenmap was used to examine an authorized local network and identify active devices.
 
