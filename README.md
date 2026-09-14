@@ -1,6 +1,47 @@
 # Batch-B083--Week-2--Penetration-Testing-Reporting
 
+# Week 2 | Cybersecurity Internship | Networkwalks
+
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
+![Type](https://img.shields.io/badge/Type-Reconnaissance-blue?style=flat)
+![Tools](https://img.shields.io/badge/Tools-Kali%20Linux-blue?style=flat)
+
+---
+
+## Report Metadata
+
+| Field | Details |
+|---|---|
+| **Pentester Name** | Etouke Cedric |
+| **Program/Batch** | B083-Networkwalks |
+| **Date** | 16 September 2026 |
+| **Client/Target** | 1. Networkwalks (secured written permission)<br>2. My own local LAN Network |
+| **Permission Secured?** | ✅ Yes |
+| **Report ID** | W2-PM-FINAL |
+
+---
+
+## Modules Completed
+
+### 1. Information Gathering
+
+- WHOIS reconnaissance
+- DNS enumeration
+- Subdomain enumeration
+- Technology identification
+- WAF detection
+
+### 2. Reconnaissance Tools
+
+- WHOIS
+- nslookup
+- DNSRecon
+- WhatWeb
+- WAFW00F
+- cURL
+
 Week 2 Penetration Testing Report
+
 # Introduction
 
 The second week of the cybersecurity practical focused on the initial stages of a penetration test, particularly reconnaissance, footprinting, information gathering, and network discovery.
