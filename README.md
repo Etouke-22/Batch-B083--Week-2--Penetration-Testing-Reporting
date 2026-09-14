@@ -120,7 +120,7 @@ The command used was:
 
 
 ```bash
-whois networkwalks.com
+> whois networkwalks.com
 ```
 The output provided information such as the registrar, registration dates, domain name servers, and DNSSEC status.
 
@@ -132,7 +132,7 @@ Nslookup was used to determine the IP address associated with the target domain.
 
 
 ```bash
-nslookup networkwalks.com
+> nslookup networkwalks.com
 ```
 
 The resulting DNS information showed the address associated with the domain and the DNS server responsible for resolving the request.
@@ -145,7 +145,7 @@ cURL was used to inspect the HTTP response returned by the target web server.
 
 
 ```bash
-curl -I https://networkwalks.com
+> curl -I https://networkwalks.com
 ```
 
 The response provided information about the HTTP status and various response headers. Depending on the configuration of the server, these headers may reveal information about the underlying web-server software, content-management system, caching mechanisms, or other components.
