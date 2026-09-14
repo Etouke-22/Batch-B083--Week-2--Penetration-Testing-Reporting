@@ -1,1 +1,228 @@
 # Batch-B083--Week-2--Penetration-Testing-Reporting
+
+Week 2 Penetration Testing Report
+# Introduction
+
+The second week of the cybersecurity practical focused on the initial stages of a penetration test, particularly reconnaissance, footprinting, information gathering, and network discovery.
+
+The objective of these exercises was to understand how security professionals collect information about a target before conducting deeper security assessments. Different tools were used because each provides a different perspective of the target environment. Domain information was examined through WHOIS and DNS utilities, web-server information was inspected with cURL, Wafw00f was used to identify web application firewall technology, and DNSRecon was used to examine available DNS records.
+
+Additional reconnaissance exercises involved Google Hacking Database (GHDB) techniques and theHarvester. These demonstrated how publicly available information can reveal details about an organization's external presence. Finally, Zenmap was used within an authorized local network to identify active devices and obtain a basic view of the network.
+
+All testing should be performed only against systems for which appropriate authorization has been obtained.
+
+## Objectives
+
+The main objectives of the practical were:
+
+Understand the purpose of reconnaissance and footprinting in penetration testing.
+Gather publicly available information about an authorized domain.
+Examine DNS and web-server information.
+Identify technologies that are externally visible.
+Understand how search engines can expose publicly indexed information.
+Collect information from multiple public sources using theHarvester.
+Discover active devices on an authorized local network.
+Assess the security relevance of the information collected.
+Document findings and distinguish reconnaissance observations from confirmed vulnerabilities.
+## Tools and Technologies
+
+The practical made use of several security and network-analysis tools.
+
+Tool	Purpose
+Kali Linux	Environment used for security reconnaissance and assessment activities
+WHOIS	Obtaining public domain-registration information
+Nslookup	Resolving domain names through DNS
+cURL	Examining HTTP response information
+Wafw00f	Detecting web application firewall technology
+DNSRecon	Enumerating publicly available DNS records
+GHDB	Searching for information indexed by search engines
+theHarvester	Collecting publicly available hosts, IP addresses, emails and related information
+Zenmap	Performing graphical Nmap-based network discovery
+Windows Command Prompt	Obtaining local network configuration
+
+
+# Reconnaissance and Footprinting
+
+## WHOIS Enumeration
+
+WHOIS was used to obtain publicly available registration information associated with the authorized domain.
+
+The command used was:
+
+whois <authorized-domain>
+
+
+The output provided information such as the registrar, registration dates, domain name servers, and DNSSEC status.
+
+This information is useful during reconnaissance because it provides an initial picture of how a domain is registered and which external infrastructure is associated with it. Although registration information is not normally considered a vulnerability by itself, it can contribute to an attacker's understanding of the organization's external presence.
+
+## DNS Resolution with Nslookup
+
+Nslookup was used to determine the IP address associated with the target domain.
+
+nslookup <authorized-domain>
+
+
+The resulting DNS information showed the address associated with the domain and the DNS server responsible for resolving the request.
+
+From a penetration-testing perspective, DNS resolution is an important early step because it identifies the network destination associated with an externally accessible service. This information can subsequently be used during authorized assessment activities.
+
+## HTTP Header Examination
+
+cURL was used to inspect the HTTP response returned by the target web server.
+
+curl -I https://<authorized-domain>
+
+
+The response provided information about the HTTP status and various response headers. Depending on the configuration of the server, these headers may reveal information about the underlying web-server software, content-management system, caching mechanisms, or other components.
+
+This demonstrates why organizations should carefully consider which technical details are exposed through HTTP responses. Information disclosed by headers may assist legitimate security testing, but it can also help an attacker fingerprint the technology used by a website.
+
+## Web Application Firewall Detection
+
+Wafw00f was used to determine whether a Web Application Firewall (WAF) was protecting the target.
+
+wafw00f <authorized-domain>
+
+
+The tool identified the WAF technology observed during the test.
+
+The presence of a WAF is an important defensive control because it can inspect and filter potentially malicious web requests. However, detecting a WAF does not demonstrate that an application is completely secure. Proper security testing would still be required to evaluate the effectiveness of the application's defenses.
+
+## DNS Enumeration
+
+DNSRecon was used to collect publicly available DNS information.
+
+dnsrecon -d <authorized-domain>
+
+
+The enumeration provided records associated with the domain, such as A, AAAA, MX, NS, SOA, and other available records.
+
+DNS records can reveal information about an organization's infrastructure, including web servers, mail servers, name servers, and other services. Consequently, unnecessary or outdated DNS records should be reviewed periodically and removed when they are no longer required.
+
+## Web Technology Fingerprinting
+
+A web technology fingerprinting tool such as WhatWeb can also be used to identify technologies running on a website.
+
+whatweb <authorized-domain>
+
+
+Only results that were successfully obtained during the practical should be included in the final report. If the tool fails to produce reliable output, the failed attempt should be documented rather than presenting an assumed result.
+
+# Google Hacking Database Reconnaissance
+
+The Google Hacking Database was examined to understand how search engines can unintentionally expose publicly accessible resources.
+
+Search operators, commonly referred to as Google dorks, can be used to narrow search results to particular URLs, file types, titles, directories, or other characteristics.
+
+The purpose of this exercise was not to exploit the discovered systems. Instead, it demonstrated how information that has already been indexed publicly may provide useful intelligence during reconnaissance.
+
+Security Significance
+
+From a defensive perspective, organizations should periodically examine what information about their infrastructure is publicly indexed. Sensitive administrative interfaces, directory listings, documents, cameras, configuration files, or other resources should not be unintentionally exposed through public search engines.
+
+A search-engine result should also not automatically be interpreted as evidence of a vulnerability. Additional verification would be required to determine the actual security impact.
+
+# Information Gathering with theHarvester
+
+TheHarvester was used to demonstrate passive information gathering from publicly available sources.
+
+A typical command is:
+
+theHarvester -d <authorized-domain> -l <limit> -b <source>
+
+
+The tool can collect information such as:
+
+IP addresses
+Hostnames
+Email addresses
+URLs
+Subdomains
+Autonomous System Numbers (ASNs)
+
+## Single-Source Search
+
+The first search configuration used a specific public information source.
+
+theHarvester -d <authorized-domain> -l <limit> -b <source>
+
+
+The results demonstrated that the amount of information obtained can vary considerably depending on the data source being queried.
+
+A lack of results from one source does not necessarily mean that the target has no publicly available information. It may simply indicate that the selected source did not return useful data.
+
+## Multi-Source Reconnaissance
+
+A broader search can be performed using multiple available sources:
+
+theHarvester -d <authorized-domain> -l <limit> -b all
+
+
+Using several sources can produce a substantially broader view of an organization's external footprint.
+
+The results should be documented using the actual output generated during the practical. Important categories include the number of discovered IP addresses, hosts, email addresses, URLs, and ASNs.
+
+It is also important to document any limitations encountered during the exercise. Some theHarvester sources may require API credentials, meaning that unavailable services can affect the quantity and completeness of the collected information.
+
+# Network Discovery with Zenmap
+
+Zenmap was used to examine an authorized local network and identify active devices.
+
+Before scanning, the local network configuration was determined using the operating system's network commands. This provided information such as the local IP address, subnet mask, and default gateway.
+
+The appropriate subnet was then selected for the authorized scan.
+
+For example:
+
+nmap -T4 -F <authorized-subnet>
+
+
+Zenmap presented the scan results through a graphical interface, making it easier to identify active hosts and visualize relationships between devices.
+
+Network discovery is particularly useful from a defensive perspective. Administrators can compare discovered devices with an approved asset inventory. An unfamiliar device may indicate a configuration problem, an unmanaged system, or another security issue requiring investigation.
+
+# Risk Assessment
+
+The information collected during reconnaissance can be categorized according to its potential security significance.
+
+Finding	Potential Significance	Suggested Risk
+Public domain-registration information	Helps build an external profile	Low
+Discoverable server IP address	Reveals network location	Low
+Technical HTTP information	Assists technology fingerprinting	Low
+Identifiable WAF technology	Reveals part of the defensive architecture	Low
+Detailed DNS records	May expose infrastructure relationships	Medium
+Large number of externally visible hosts	Expands the infrastructure requiring monitoring	Medium
+Public email addresses	Could assist phishing or social engineering	Low
+Multiple ASNs	Provides information about network infrastructure	Low
+Unexpected internal hosts	May indicate unmanaged or unauthorized devices	Medium
+Publicly indexed resources	May provide additional reconnaissance information	Medium
+
+These ratings should be treated as preliminary observations rather than confirmed vulnerabilities. Reconnaissance primarily identifies information that could be useful during a later assessment. Additional authorized testing is required before determining whether a specific weakness can actually be exploited.
+
+# Recommendations
+
+Based on the reconnaissance and network-discovery exercises, the following defensive measures are recommended:
+
+Regularly review publicly available information about organizational domains and infrastructure.
+Minimize unnecessary technical information exposed through web-server responses.
+Periodically audit DNS records and remove obsolete entries.
+Maintain and monitor the organization's externally exposed assets.
+Ensure that the web application firewall is correctly configured and regularly updated.
+Review publicly accessible email addresses and strengthen defenses against phishing and impersonation.
+Periodically assess the organization's public-facing attack surface.
+Conduct internal network discovery at regular intervals.
+Compare discovered network devices against an approved asset inventory.
+Investigate unknown or unexpected devices on internal networks.
+Keep network diagrams and asset documentation current.
+Perform penetration-testing activities only when appropriate authorization has been obtained.
+
+# Conclusion
+
+The practical exercises provided experience with several important stages of penetration testing, particularly reconnaissance, footprinting, passive information gathering, and network discovery.
+
+The exercises demonstrated that significant information can be obtained from publicly available sources without directly exploiting a target. DNS records, HTTP responses, registration information, search-engine indexes, public datasets, and network-discovery tools can each contribute different pieces of information about an organization's digital environment.
+
+The activities also emphasized the importance of interpreting reconnaissance results correctly. The discovery of an IP address, hostname, DNS record, email address, or technology does not automatically constitute a vulnerability. Such information should instead be treated as intelligence that may require additional authorized investigation.
+
+Overall, the practical strengthened my understanding of the reconnaissance phase of cybersecurity and highlighted the importance of accurate documentation, evidence-based analysis, responsible testing, and maintaining an appropriate authorization scope.
