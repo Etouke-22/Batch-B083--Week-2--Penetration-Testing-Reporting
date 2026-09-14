@@ -27,9 +27,10 @@
 - `W2-PM 3` — 
 - `W2-PM 4` — Attack with theHarverster
 - `W2-PM 5` — Zenmap/Nmamp Enumeration
+  
 
 
-## ⚠⚠ Disclaimer ⚠⚠
+# ⚠⚠ Disclaimer ⚠⚠
 
 All security testing activities documented in this repository were conducted only against systems, networks, and applications for which I had appropriate authorization or that I personally owned and controlled.
 
@@ -50,7 +51,7 @@ Additional reconnaissance exercises involved Google Hacking Database (GHDB) tech
 
 All testing should be performed only against systems for which appropriate authorization has been obtained.
 
-## Objectives
+## 🎯Objectives
 
 The main objectives of the practical were:
 
@@ -131,7 +132,7 @@ Nslookup was used to determine the IP address associated with the target domain.
 
 
 ```bash
-nslookup <authorized-domain>
+nslookup networkwalks.com
 ```
 
 The resulting DNS information showed the address associated with the domain and the DNS server responsible for resolving the request.
@@ -144,7 +145,7 @@ cURL was used to inspect the HTTP response returned by the target web server.
 
 
 ```bash
-curl -I https://<authorized-domain>
+curl -I https://networkwalks.com
 ```
 
 The response provided information about the HTTP status and various response headers. Depending on the configuration of the server, these headers may reveal information about the underlying web-server software, content-management system, caching mechanisms, or other components.
@@ -157,7 +158,7 @@ Wafw00f was used to determine whether a Web Application Firewall (WAF) was prote
 
 
 ```bash
-`wafw00f <authorized-domain>`
+`wafw00f networkwalks.com
 ```
 
 The tool identified the WAF technology observed during the test.
@@ -170,7 +171,7 @@ DNSRecon was used to collect publicly available DNS information.
 
 
 ```bash
-> dnsrecon -d <authorized-domain>
+> dnsrecon -d networkwalks.com
 ```
 
 
@@ -184,7 +185,7 @@ A web technology fingerprinting tool such as WhatWeb can also be used to identif
 
 
 ```bash
-whatweb <authorized-domain>
+whatweb networkwalks.com
 ```
 
 Only results that were successfully obtained during the practical should be included in the final report. If the tool fails to produce reliable output, the failed attempt should be documented rather than presenting an assumed result.
@@ -211,7 +212,7 @@ A typical command is:
 
 
 ```bash
-> theHarvester -d <authorized-domain> -l <limit> -b <source>
+> theHarvester -d networkwalks.com -l <limit> -b <source>
 ```
 
 
@@ -229,7 +230,7 @@ Autonomous System Numbers (ASNs)
 The first search configuration used a specific public information source.
 
 ```bash
-> theHarvester -d <authorized-domain> -l <limit> -b <source>
+> theHarvester -d networkwalks.com -l <limit> -b <source>
 ```
 
 
@@ -243,7 +244,7 @@ A broader search can be performed using multiple available sources:
 
 
 ```bash
-> theHarvester -d <authorized-domain> -l <limit> -b all
+> theHarvester -d networkwalks.com -l <limit> -b all
 ```
 
 
