@@ -15,9 +15,9 @@
 | **Pentester Name** | Etouke Cedric |
 | **Program/Batch** | B083-Networkwalks |
 | **Date** | 16 September 2026 |
-| **Client/Target** | 1. Networkwalks (secured written permission)<br>2. My own local LAN Network |
+| **Client/Target** | 1. Networkwalks (Granted permission)<br>2. My own local LAN |
 | **Permission Secured?** | ✅ Yes |
-| **Report ID** | W2-PM-FINAL |
+| **Report ID** | W2-PM- |
 
 ---
 
@@ -114,8 +114,10 @@ Windows Command Prompt	Obtaining local network configuration
 WHOIS was used to obtain publicly available registration information associated with the authorized domain.
 
 The command used was:
+
+[!NOTE]
 ```bash
-`whois networkwalks.com`
+whois networkwalks.com
 ```
 The output provided information such as the registrar, registration dates, domain name servers, and DNSSEC status.
 
@@ -124,8 +126,10 @@ This information is useful during reconnaissance because it provides an initial 
 ## DNS Resolution with Nslookup
 
 Nslookup was used to determine the IP address associated with the target domain.
+
+[!NOTE]
 ```bash
-`nslookup <authorized-domain>`
+nslookup <authorized-domain>
 ```
 
 The resulting DNS information showed the address associated with the domain and the DNS server responsible for resolving the request.
@@ -136,8 +140,9 @@ From a penetration-testing perspective, DNS resolution is an important early ste
 
 cURL was used to inspect the HTTP response returned by the target web server.
 
+[!NOTE]
 ```bash
-`curl -I https://<authorized-domain>`
+curl -I https://<authorized-domain>
 ```
 
 The response provided information about the HTTP status and various response headers. Depending on the configuration of the server, these headers may reveal information about the underlying web-server software, content-management system, caching mechanisms, or other components.
@@ -148,6 +153,7 @@ This demonstrates why organizations should carefully consider which technical de
 
 Wafw00f was used to determine whether a Web Application Firewall (WAF) was protecting the target.
 
+[!NOTE]
 ```bash
 `wafw00f <authorized-domain>`
 ```
@@ -160,6 +166,7 @@ The presence of a WAF is an important defensive control because it can inspect a
 
 DNSRecon was used to collect publicly available DNS information.
 
+[!NOTE]
 `dnsrecon -d <authorized-domain>`
 
 
@@ -171,8 +178,10 @@ DNS records can reveal information about an organization's infrastructure, inclu
 
 A web technology fingerprinting tool such as WhatWeb can also be used to identify technologies running on a website.
 
-`whatweb <authorized-domain>`
-
+[!NOTE]
+```bash
+whatweb <authorized-domain>
+```
 
 Only results that were successfully obtained during the practical should be included in the final report. If the tool fails to produce reliable output, the failed attempt should be documented rather than presenting an assumed result.
 
@@ -196,7 +205,10 @@ TheHarvester was used to demonstrate passive information gathering from publicly
 
 A typical command is:
 
-`theHarvester -d <authorized-domain> -l <limit> -b <source>`
+[!NOTE]
+```bash
+theHarvester -d <authorized-domain> -l <limit> -b <source>
+```
 
 
 The tool can collect information such as:
@@ -223,7 +235,10 @@ A lack of results from one source does not necessarily mean that the target has 
 
 A broader search can be performed using multiple available sources:
 
-`theHarvester -d <authorized-domain> -l <limit> -b all`
+[!NOTE]
+```bash
+theHarvester -d <authorized-domain> -l <limit> -b all
+```
 
 
 Using several sources can produce a substantially broader view of an organization's external footprint.
@@ -242,7 +257,10 @@ The appropriate subnet was then selected for the authorized scan.
 
 For example:
 
-`nmap -T4 -F <authorized-subnet>`
+[!NOTE]
+```bash
+nmap -T4 -F <authorized-subnet>
+```
 
 
 Zenmap presented the scan results through a graphical interface, making it easier to identify active hosts and visualize relationships between devices.
