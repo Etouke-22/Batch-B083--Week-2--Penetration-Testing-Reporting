@@ -50,7 +50,7 @@ WHOIS was used to obtain publicly available registration information associated 
 The command used was:
 
 '''bash
-'whois networkwalks.com'
+whois networkwalks.com 
 '''
 
 The output provided information such as the registrar, registration dates, domain name servers, and DNSSEC status.
@@ -61,7 +61,7 @@ This information is useful during reconnaissance because it provides an initial 
 
 Nslookup was used to determine the IP address associated with the target domain.
 
-nslookup <authorized-domain>
+' nslookup <authorized-domain> '
 
 
 The resulting DNS information showed the address associated with the domain and the DNS server responsible for resolving the request.
