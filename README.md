@@ -55,7 +55,7 @@
 
 Week 2 Penetration Testing Report
 
-
+<!--
 ## ⚠⚠ Disclaimer ⚠⚠
 
 All security testing activities documented in this repository were conducted only against systems, networks, and applications for which I had appropriate authorization or that I personally owned and controlled.
@@ -65,7 +65,7 @@ The information and techniques presented in this report are intended strictly fo
 I do not support or encourage unauthorized access, data theft, disruption of services, or any other illegal activity. The responsibility for how the information, commands, and techniques contained in this repository are used rests entirely with the individual using them.
 
 Unauthorized security testing may violate applicable laws and regulations and can result in legal, financial, academic, or professional consequences. Always obtain proper authorization and define the scope of testing before conducting any security assessment.
-
+-->
 
 # Introduction
 
@@ -115,7 +115,7 @@ WHOIS was used to obtain publicly available registration information associated 
 
 The command used was:
 
-**whois networkwalks.com**
+```whois networkwalks.com```
 
 The output provided information such as the registrar, registration dates, domain name servers, and DNSSEC status.
 
