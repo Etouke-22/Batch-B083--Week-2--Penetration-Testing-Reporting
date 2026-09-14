@@ -22,11 +22,11 @@
 ---
 
 ## Modules Completed
-- `W2-Module 1` — Reconnaissance & Footprinting
-- `W2-Module 2` — DNS Enumeration
-- `W2-Module 3` — Web Technology & Server Enumeration
-- `W2-Module 4` — Web Application Firewall Detection
-- `W2-Module 5` — Network Scanning & Discovery
+- `W2-PM 1` — Multiple Kali Tools
+- `W2-PM 2` — Attack with GHDB
+- `W2-PM 3` — 
+- `W2-PM 4` — Attack with theHarverster
+- `W2-PM 5` — Zenmap/Nmamp Enumeration
 
 ## Phases Covered
 
@@ -115,7 +115,7 @@ WHOIS was used to obtain publicly available registration information associated 
 
 The command used was:
 
-> [!NOTE]
+
 ```bash
 whois networkwalks.com
 ```
@@ -127,7 +127,7 @@ This information is useful during reconnaissance because it provides an initial 
 
 Nslookup was used to determine the IP address associated with the target domain.
 
-> [!NOTE]
+
 ```bash
 nslookup <authorized-domain>
 ```
@@ -140,7 +140,7 @@ From a penetration-testing perspective, DNS resolution is an important early ste
 
 cURL was used to inspect the HTTP response returned by the target web server.
 
-> [!NOTE]
+
 ```bash
 curl -I https://<authorized-domain>
 ```
@@ -153,7 +153,7 @@ This demonstrates why organizations should carefully consider which technical de
 
 Wafw00f was used to determine whether a Web Application Firewall (WAF) was protecting the target.
 
-> [!NOTE]
+
 ```bash
 `wafw00f <authorized-domain>`
 ```
@@ -166,8 +166,10 @@ The presence of a WAF is an important defensive control because it can inspect a
 
 DNSRecon was used to collect publicly available DNS information.
 
-> [!NOTE]
-`dnsrecon -d <authorized-domain>`
+
+```bash
+> dnsrecon -d <authorized-domain>
+```
 
 
 The enumeration provided records associated with the domain, such as A, AAAA, MX, NS, SOA, and other available records.
@@ -178,7 +180,7 @@ DNS records can reveal information about an organization's infrastructure, inclu
 
 A web technology fingerprinting tool such as WhatWeb can also be used to identify technologies running on a website.
 
-> [!NOTE]
+
 ```bash
 whatweb <authorized-domain>
 ```
@@ -205,9 +207,9 @@ TheHarvester was used to demonstrate passive information gathering from publicly
 
 A typical command is:
 
-> [!NOTE]
+
 ```bash
-theHarvester -d <authorized-domain> -l <limit> -b <source>
+> theHarvester -d <authorized-domain> -l <limit> -b <source>
 ```
 
 
@@ -224,7 +226,9 @@ Autonomous System Numbers (ASNs)
 
 The first search configuration used a specific public information source.
 
-`theHarvester -d <authorized-domain> -l <limit> -b <source>`
+```bash
+> theHarvester -d <authorized-domain> -l <limit> -b <source>
+```
 
 
 The results demonstrated that the amount of information obtained can vary considerably depending on the data source being queried.
@@ -235,7 +239,7 @@ A lack of results from one source does not necessarily mean that the target has 
 
 A broader search can be performed using multiple available sources:
 
-> [!NOTE]
+
 ```bash
 > theHarvester -d <authorized-domain> -l <limit> -b all
 ```
@@ -257,9 +261,8 @@ The appropriate subnet was then selected for the authorized scan.
 
 For example:
 
-> [!NOTE]
 ```bash
-nmap -T4 -F <authorized-subnet>
+> nmap -T4 -F <authorized-subnet>
 ```
 
 
