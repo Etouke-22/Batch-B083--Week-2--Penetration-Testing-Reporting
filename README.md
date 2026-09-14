@@ -318,23 +318,4 @@ The activities also emphasized the importance of interpreting reconnaissance res
 
 Overall, the practical strengthened my understanding of the reconnaissance phase of cybersecurity and highlighted the importance of accurate documentation, evidence-based analysis, responsible testing, and maintaining an appropriate authorization scope.
 
-# Tool / Technology	Purpose
-
-|---|---|
-| Kali Linux | 	Security-focused operating system used as the primary penetration-testing environment.|
-| WHOIS |	Used to obtain publicly available domain registration and ownership information.|
-| Nslookup	| Used to query DNS records and resolve domain names to IP addresses. |
-cURL	Used to inspect HTTP responses and identify information exposed by web servers.
-Wafw00f	Used to detect and identify Web Application Firewall (WAF) technologies.
-DNSRecon	Used to enumerate and analyze publicly available DNS records and infrastructure.
-GHDB	Used to demonstrate search-engine reconnaissance and identify publicly indexed information.
-theHarvester	Used to gather publicly available information such as email addresses, hostnames, IP addresses, and URLs.
-Zenmap	Graphical interface for Nmap, used to discover hosts and examine an authorized network.
-Nmap	Used for network discovery and scanning of authorized systems and networks.
-Windows Command Prompt	Used to obtain local network configuration and connectivity information.
-
-
-
-
-
 
