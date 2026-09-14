@@ -49,9 +49,7 @@ WHOIS was used to obtain publicly available registration information associated 
 
 The command used was:
 
-'''bash
-whois networkwalks.com 
-'''
+**whois networkwalks.com**
 
 The output provided information such as the registrar, registration dates, domain name servers, and DNSSEC status.
 
