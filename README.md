@@ -28,33 +28,6 @@
 - `W2-PM 4` — Attack with theHarverster
 - `W2-PM 5` — Zenmap/Nmamp Enumeration
 
-## Phases Covered
-
-1. Reconnaissance & Information Gathering
-2. Footprinting & Enumeration
-3. Network Scanning & Discovery
-4. Analysis & Recommendations
-5. Conclusion & Documentation 
-
-### 1. Information Gathering
-
-- WHOIS reconnaissance
-- DNS enumeration
-- Subdomain enumeration
-- Technology identification
-- WAF detection
-
-### 2. Reconnaissance Tools
-
-- WHOIS
-- nslookup
-- DNSRecon
-- WhatWeb
-- WAFW00F
-- CURL
-
-Week 2 Penetration Testing Report
-
 
 ## ⚠⚠ Disclaimer ⚠⚠
 
@@ -90,12 +63,13 @@ Collect information from multiple public sources using theHarvester.
 Discover active devices on an authorized local network.
 Assess the security relevance of the information collected.
 Document findings and distinguish reconnaissance observations from confirmed vulnerabilities.
+
 ## Tools and Technologies
 
 The practical made use of several security and network-analysis tools.
 
 Tool	Purpose
-Kali Linux	Environment used for security reconnaissance and assessment activities
+Kali Linux	Environment used for security reconnaissance and assessment activities <br>
 WHOIS	Obtaining public domain-registration information
 Nslookup	Resolving domain names through DNS
 cURL	Examining HTTP response information
@@ -105,6 +79,34 @@ GHDB	Searching for information indexed by search engines
 theHarvester	Collecting publicly available hosts, IP addresses, emails and related information
 Zenmap	Performing graphical Nmap-based network discovery
 Windows Command Prompt	Obtaining local network configuration
+
+
+
+## Phases Covered
+
+1. Reconnaissance & Information Gathering
+2. Footprinting & Enumeration
+3. Network Scanning & Discovery
+4. Analysis & Recommendations
+5. Conclusion & Documentation 
+
+
+###  Reconnaissance Tools
+
+- WHOIS
+- nslookup
+- DNSRecon
+- WhatWeb
+- WAFW00F
+- CURL
+
+###  Information Gathering
+
+- WHOIS reconnaissance
+- DNS enumeration
+- Subdomain enumeration
+- Technology identification
+- WAF detection
 
 
 # Reconnaissance and Footprinting
