@@ -211,25 +211,26 @@ A typical command is:
 
 
 ```bash
-> theHarvester -d networkwalks.com -l <limit> -b <source>
+> theHarvester -d networkwalks.com -l 100 -b baidu
 ```
-
+Here `-d is the target domain`, `-l limits the number of results`, and `-b sets the data source`. theHarvester then extracts
+the details and shows them on screen.
 
 The tool can collect information such as:
 
-IP addresses
-Hostnames
-Email addresses
-URLs
-Subdomains
-Autonomous System Numbers (ASNs)
+**IP addresses**</br>
+**Hostnames**</br>
+**Email addresses**</br>
+**URLs**</br>
+**Subdomains**</br>
+**Autonomous System Numbers**(ASNs</br>
 
 ## Single-Source Search
 
 The first search configuration used a specific public information source.
 
 ```bash
-> theHarvester -d networkwalks.com -l <limit> -b <source>
+> theHarvester -d networkwalks.com -l 100 -b baidu
 ```
 
 
@@ -243,7 +244,7 @@ A broader search can be performed using multiple available sources:
 
 
 ```bash
-> theHarvester -d networkwalks.com -l <limit> -b all
+> theHarvester -d microsoft.com -l 50 -b all
 ```
 
 
@@ -252,6 +253,21 @@ Using several sources can produce a substantially broader view of an organizatio
 The results should be documented using the actual output generated during the practical. Important categories include the number of discovered IP addresses, hosts, email addresses, URLs, and ASNs.
 
 It is also important to document any limitations encountered during the exercise. Some theHarvester sources may require API credentials, meaning that unavailable services can affect the quantity and completeness of the collected information.
+
+# Extra References & tips
+
+❑ theHarvester is passive recon: it reads public sources and never touches the target.
+❑ Different data sources return different results, so always try more than one.
+❑ Harvested emails feed phishing campaigns; sub-domains expand the attack surface.
+❑ The less an organization exposes publicly, the harder every later attack stage becomes.
+❑ theHarvester comes pre-installed in Kali Linux but if you are using other OS then you can install it
+using the command: sudo apt-get install theHarvester. If this does not work you can clone the Git hub
+repository and use it using commands:
+$git clone https://github.com/laramies/theHarvester.git
+$cd theHarvester
+$sudo python ./theHarvester.py
+
+
 
 # PM5 Network Discovery with Zenmap
 
