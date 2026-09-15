@@ -262,8 +262,8 @@ For this activity, zenmap was used to examine an authorized local network and id
 
 Before scanning, the local network configuration was determined using the operating system's network commands.
 
-> ```bash
-> ipconfig`
+ ```bash
+> ipconfig
 ```
 ## Ethernet Adapter
 
@@ -271,14 +271,14 @@ This provided information such as
 
 ```bash
 Local IP address:  192.168.133.1
-Subnet mask:**     255.255.255.0
+Subnet mask:       255.255.255.0
 Default gateway:   
 ```
 
-Wireless Adapter Wifi
+## Wireless Adapter Wifi
 ```bash
 Local IP address:  192.168.1.106
-Subnet mask:**     255.255.255.0
+Subnet mask:       255.255.255.0
 Default gateway:   192.168.1.1
 ```
 
@@ -288,8 +288,31 @@ The appropriate subnet was then selected for the authorized scan.
 For example:
 
 ```bash
-> nmap -T4 -F <authorized-subnet>
+> nmap -sn 192.168.1.0/24
 ```
+
+
+## Report Metadata
+
+| Field | Value |
+|---|---|
+| **Target** | 192.168.1.0/24 |
+| **Profile** | Ping Scan |
+| **Nmap command** | nmap -sn 192.168.1.0/24 |
+
+
+
+
+## Report Metadata
+
+| Host | Status |
+|---|---|
+| **192.168.1.1** | Discovered |
+| **192.168.1.106** | Discovered |
+| **192.168.1.173** | Discovered |
+| **192.168.1.175** | Discovered |
+
+
 
 
 Zenmap presented the scan results through a graphical interface, making it easier to identify active hosts and visualize relationships between devices.
