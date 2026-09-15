@@ -368,17 +368,17 @@ Network discovery is particularly useful from a defensive perspective. Administr
 
 The information collected during reconnaissance can be categorized according to its potential security significance.
 
-Finding	Potential Significance	Suggested Risk</br>
-Public domain-registration information	Helps build an external profile	Low</br>
-Discoverable server IP address	Reveals network location	Low</br>
-Technical HTTP information	Assists technology fingerprinting	Low</br>
-Identifiable WAF technology	Reveals part of the defensive architecture	Low</br>
-Detailed DNS records	May expose infrastructure relationships	Medium</br>
-Large number of externally visible hosts	Expands the infrastructure requiring monitoring	Medium</br>
-Public email addresses	Could assist phishing or social engineering	Low</br>
-Multiple ASNs	Provides information about network infrastructure	Low</br>
-Unexpected internal hosts	May indicate unmanaged or unauthorized devices	Medium</br>
-Publicly indexed resources	May provide additional reconnaissance information	Medium</br>
+- Finding	Potential Significance	Suggested Risk</br>
+- Public domain-registration information	Helps build an external profile	Low</br>
+- Discoverable server IP address	Reveals network location	Low</br>
+- Technical HTTP information	Assists technology fingerprinting	Low</br>
+- Identifiable WAF technology	Reveals part of the defensive architecture	Low</br>
+- Detailed DNS records	May expose infrastructure relationships	Medium</br>
+- Large number of externally visible hosts	Expands the infrastructure requiring monitoring	Medium</br>
+- Public email addresses	Could assist phishing or social engineering	Low</br>
+- Multiple ASNs	Provides information about network infrastructure	Low</br>
+- Unexpected internal hosts	May indicate unmanaged or unauthorized devices	Medium</br>
+- Publicly indexed resources	May provide additional reconnaissance information	Medium</br>
 
 These ratings should be treated as preliminary observations rather than confirmed vulnerabilities. Reconnaissance primarily identifies information that could be useful during a later assessment. Additional authorized testing is required before determining whether a specific weakness can actually be exploited.
 
@@ -386,18 +386,18 @@ These ratings should be treated as preliminary observations rather than confirme
 
 Based on the reconnaissance and network-discovery exercises, the following defensive measures are recommended:
 
-Regularly review publicly available information about organizational domains and infrastructure.</br>
-Minimize unnecessary technical information exposed through web-server responses.</br>
-Periodically audit DNS records and remove obsolete entries.</br>
-Maintain and monitor the organization's externally exposed assets.</br>
-Ensure that the web application firewall is correctly configured and regularly updated.</br>
-Review publicly accessible email addresses and strengthen defenses against phishing and impersonation.</br>
-Periodically assess the organization's public-facing attack surface.</br>
-Conduct internal network discovery at regular intervals.</br>
-Compare discovered network devices against an approved asset inventory.</br>
-Investigate unknown or unexpected devices on internal networks.</br>
-Keep network diagrams and asset documentation current.</br>
-Perform penetration-testing activities only when appropriate authorization has been obtained.
+1. Regularly review publicly available information about organizational domains and infrastructure.</br>
+2. Minimize unnecessary technical information exposed through web-server responses.</br>
+3. Periodically audit DNS records and remove obsolete entries.</br>
+4. Maintain and monitor the organization's externally exposed assets.</br>
+5. Ensure that the web application firewall is correctly configured and regularly updated.</br>
+6. Review publicly accessible email addresses and strengthen defenses against phishing and impersonation.</br>
+7. Periodically assess the organization's public-facing attack surface.</br>
+8. Conduct internal network discovery at regular intervals.</br>
+9. Compare discovered network devices against an approved asset inventory.</br>
+10. Investigate unknown or unexpected devices on internal networks.</br>
+11. Keep network diagrams and asset documentation current.</br>
+12. Perform penetration-testing activities only when appropriate authorization has been obtained.
 
 # Conclusion
 
