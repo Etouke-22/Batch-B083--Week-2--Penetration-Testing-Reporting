@@ -83,24 +83,6 @@ The practical made use of several security and network-analysis tools.
 
 
 
-## Phases Covered
-
-1. Reconnaissance & Information Gathering
-2. Footprinting & Enumeration
-3. Network Scanning & Discovery
-4. Analysis & Recommendations
-5. Conclusion & Documentation 
-
-
-###  Reconnaissance Tools
-
-- WHOIS
-- nslookup
-- DNSRecon
-- WhatWeb
-- WAFW00F
-- CURL
-
 ###  Information Gathering
 
 - WHOIS reconnaissance
