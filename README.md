@@ -436,3 +436,20 @@ The activities also emphasized the importance of interpreting reconnaissance res
 Overall, the practical strengthened my understanding of the reconnaissance phase of cybersecurity and highlighted the importance of accurate documentation, evidence-based analysis, responsible testing, and maintaining an appropriate authorization scope.
 
 
+
+
+
+
+
+
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
+
+
