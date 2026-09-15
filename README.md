@@ -258,7 +258,21 @@ It is also important to document any limitations encountered during the exercise
 
 Zenmap was used to examine an authorized local network and identify active devices.
 
-Before scanning, the local network configuration was determined using the operating system's network commands. This provided information such as the local IP address, subnet mask, and default gateway.
+Before scanning, the local network configuration was determined using the operating system's network commands.
+
+```bash
+`ipconfig`
+```
+
+
+This provided information such as 
+```bash
+**The local IP address**: `192.168.1.106`
+
+**Subnet mask:** `255.255.255.0`
+ **Default gateway:** `192.168.1.1`
+```
+
 
 The appropriate subnet was then selected for the authorized scan.
 
