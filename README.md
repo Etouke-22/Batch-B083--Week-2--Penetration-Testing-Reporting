@@ -256,15 +256,15 @@ It is also important to document any limitations encountered during the exercise
 
 # Extra References & tips
 
-❑ theHarvester is passive recon: it reads public sources and never touches the target.
-❑ Different data sources return different results, so always try more than one.
-❑ Harvested emails feed phishing campaigns; sub-domains expand the attack surface.
-❑ The less an organization exposes publicly, the harder every later attack stage becomes.
+❑ theHarvester is passive recon: it reads public sources and never touches the target.</br>
+❑ Different data sources return different results, so always try more than one.</br>
+❑ Harvested emails feed phishing campaigns; sub-domains expand the attack surface.</br>
+❑ The less an organization exposes publicly, the harder every later attack stage becomes.</br>
 ❑ theHarvester comes pre-installed in Kali Linux but if you are using other OS then you can install it
 using the command: sudo apt-get install theHarvester. If this does not work you can clone the Git hub
-repository and use it using commands:
-$git clone https://github.com/laramies/theHarvester.git
-$cd theHarvester
+repository and use it using commands:</br>
+$git clone https://github.com/laramies/theHarvester.git</br>
+$cd theHarvester</br>
 $sudo python ./theHarvester.py
 
 
