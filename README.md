@@ -197,6 +197,20 @@ Search operators, commonly referred to as Google dorks, can be used to narrow se
 
 The purpose of this exercise was not to exploit the discovered systems. Instead, it demonstrated how information that has already been indexed publicly may provide useful intelligence during reconnaissance.
 
+
+### Task 1 — Publicly Accessible Security Cameras
+|#|Link|Dork|Username/Password|
+|------|------|------|--------|
+|http://www.insecam.org/en/view/414256/|keke|hseie|jada|
+|2|http://109.233.191.130:8080/|intitle:"webcamXP" inurl:8080|N/A|
+|3|http://www.insecam.org/en/view/570197/|intitle:"webcamXP 5"|N/A|
+|4|http://www.insecam.org/en/view/764128/||N/A|
+|5|http://198.71.120.207:8080/||N/A|
+|6|http://72.199.200.5:8080/|||
+|7||http://109.233.191.130:8080/multi.html||
+|8|||N/A|
+
+
 Security Significance
 
 From a defensive perspective, organizations should periodically examine what information about their infrastructure is publicly indexed. Sensitive administrative interfaces, directory listings, documents, cameras, configuration files, or other resources should not be unintentionally exposed through public search engines.
