@@ -283,7 +283,7 @@ A broader search can be performed using multiple available sources:
 | **Data Source** | All sources available |
 
 
-**Major Findings**
+**Major Findings:**
 
 | Finding | Result |
 |---|---|
@@ -295,6 +295,15 @@ A broader search can be performed using multiple available sources:
 |**Hosts Found**|	1410|
 |**LinkedIn Users**|0|
 
+**ASNs Identified:**
+```
+AS8070  
+AS8075
+AS13335
+AS40034  
+AS133618 
+AS396982 
+``` 
 
 Using several sources can produce a substantially broader view of an organization's external footprint.
 
