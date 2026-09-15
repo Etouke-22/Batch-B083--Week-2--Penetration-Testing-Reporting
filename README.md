@@ -256,21 +256,30 @@ It is also important to document any limitations encountered during the exercise
 
 # PM5 Network Discovery with Zenmap
 
-Zenmap was used to examine an authorized local network and identify active devices.
+For this activity, zenmap was used to examine an authorized local network and identify active devices.
+
+## Local Network Adapter
 
 Before scanning, the local network configuration was determined using the operating system's network commands.
 
+> ```bash
+> ipconfig`
+```
+## Ethernet Adapter
+
+This provided information such as
+
 ```bash
-`ipconfig`
+Local IP address:  192.168.133.1
+Subnet mask:**     255.255.255.0
+Default gateway:   
 ```
 
-
-This provided information such as 
+Wireless Adapter Wifi
 ```bash
-**The local IP address**: `192.168.1.106`
-
-**Subnet mask:** `255.255.255.0`
- **Default gateway:** `192.168.1.1`
+Local IP address:  192.168.1.106
+Subnet mask:**     255.255.255.0
+Default gateway:   192.168.1.1
 ```
 
 
