@@ -205,12 +205,12 @@ The purpose of this exercise was not to exploit the discovered systems. Instead,
 |2|http://109.233.191.130:8080/|intitle:"webcamXP" inurl:8080|N/A|
 |3|http://www.insecam.org/en/view/570197/|intitle:"webcamXP 5"|N/A|
 |4|http://www.insecam.org/en/view/764128/|intitle:"webcamXP 5"|N/A|
-|5|http://198.71.120.207:8080/||N/A|
+|5|http://83.41.12.44/|intitle:"webcamxp" "Flash JPEG Stream"|N/A|
 |6|http://72.199.200.5:8080/|intitle:"webcamXP" inurl:8080|N/A|
 |7|http://109.233.191.130:8080/multi.html|intitle:"webcamXP 5" inurl:admin.html|N/A|
 |8|http://99.114.240.169:8080/|intitle:"Webcam" inurl:WebCam.htm |N/A|
-|9|http://139.64.168.120:8080/|intitle:"webcamXP 5" inurl:admin.html|
-|10|
+|9|http://139.64.168.120:8080/|intitle:"webcamxp" "Flash JPEG Stream"|
+|10|http://109.206.96.249:8080/|inurl:/multi.html intitle:webcam|N/A|
 
 Security Significance
 
