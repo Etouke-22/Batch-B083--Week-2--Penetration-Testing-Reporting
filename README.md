@@ -212,6 +212,21 @@ The purpose of this exercise was not to exploit the discovered systems. Instead,
 |9|http://139.64.168.120:8080/|intitle:"webcamxp" "Flash JPEG Stream"|N/A|
 |10|http://109.206.96.249:8080/|inurl:/multi.html intitle:webcam|N/A|
 
+### Task 2 — Mathematics Ebooks in PDF Format
+|#|Link|Dork|Username/Password|
+|---|------|------|--------|
+|1|http://erewhon.superkuh.com/library/Math/|intitle:index.of "parent directory" mathematics pdf|---|
+|2|https://www.unm.edu/~megrad/Math/|intitle:index.of "parent directory" mathematics pdf|---|
+|3|https://www.netlib.org/math/docpdf/||---|
+|4|https://education.giakonda.org.uk/Maths/?SD|---|
+|5|http://inis.jinr.ru/sl/vol2/Mathematics/Math.Encyclopedia/Pdf/||---|
+|6|https://www.maths.dur.ac.uk/teaching/Exam/papers/2021/||---|
+|7|
+|8|
+|9|
+|10|
+
+
 Security Significance
 
 From a defensive perspective, organizations should periodically examine what information about their infrastructure is publicly indexed. Sensitive administrative interfaces, directory listings, documents, cameras, configuration files, or other resources should not be unintentionally exposed through public search engines.
