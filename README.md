@@ -8,8 +8,7 @@
 
 ---
 
-## Report Metadata
-
+##  Report Metadata 
 | Field | Details |
 |---|---|
 | **Pentester Name** | Etouke Cedric |
@@ -292,7 +291,7 @@ For example:
 ```
 
 
-## Report Metadata
+### Zenmap Scan
 
 | Field | Value |
 |---|---|
@@ -303,7 +302,7 @@ For example:
 
 
 
-## Report Metadata
+### Host Discovered
 
 | Host | Status |
 |---|---|
@@ -313,11 +312,10 @@ For example:
 | **192.168.1.175** | Discovered |
 
 
-
-
 Zenmap presented the scan results through a graphical interface, making it easier to identify active hosts and visualize relationships between devices.
 
 Network discovery is particularly useful from a defensive perspective. Administrators can compare discovered devices with an approved asset inventory. An unfamiliar device may indicate a configuration problem, an unmanaged system, or another security issue requiring investigation.
+
 
 # Risk Assessment
 
