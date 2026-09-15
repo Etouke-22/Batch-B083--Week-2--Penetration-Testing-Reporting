@@ -29,7 +29,7 @@
   
 
 
-# ⚠⚠ Disclaimer ⚠⚠
+# 1 ⚠⚠ Disclaimer ⚠⚠
 
 All security testing activities documented in this repository were conducted only against systems, networks, and applications for which I had appropriate authorization or that I personally owned and controlled.
 
@@ -40,7 +40,7 @@ I do not support or encourage unauthorized access, data theft, disruption of ser
 Unauthorized security testing may violate applicable laws and regulations and can result in legal, financial, academic, or professional consequences. Always obtain proper authorization and define the scope of testing before conducting any security assessment.
 
 
-# Introduction
+# 2 Introduction
 
 The second week of the cybersecurity practical focused on the initial stages of a penetration test, particularly reconnaissance, footprinting, information gathering, and network discovery.
 
@@ -64,21 +64,22 @@ Discover active devices on an authorized local network.
 Assess the security relevance of the information collected.
 Document findings and distinguish reconnaissance observations from confirmed vulnerabilities.
 
-## Tools and Technologies
+## 3 Tools and Technologies
 
 The practical made use of several security and network-analysis tools.
 
-Tool	Purpose
-Kali Linux	Environment used for security reconnaissance and assessment activities <br>
-WHOIS	Obtaining public domain-registration information
-Nslookup	Resolving domain names through DNS
-cURL	Examining HTTP response information
-Wafw00f	Detecting web application firewall technology
-DNSRecon	Enumerating publicly available DNS records
-GHDB	Searching for information indexed by search engines
-theHarvester	Collecting publicly available hosts, IP addresses, emails and related information
-Zenmap	Performing graphical Nmap-based network discovery
-Windows Command Prompt	Obtaining local network configuration
+|Tool|	Purpose|
+|---|---|
+|Kali Linux|Environment used for security reconnaissance and assessment activities| <br>
+|WHOIS|	Obtaining public domain-registration information|
+|Nslookup|	Resolving domain names through DNS|
+|CURL|	Examining HTTP response information|
+|Wafw00f|	Detecting web application firewall technology|
+|DNSRecon|Enumerating publicly available DNS records|
+|GHDB	|Searching for information indexed by search engines|
+|theHarvester	|Collecting publicly available hosts, IP addresses, emails and related information|
+|Zenmap|	Performing graphical Nmap-based network discovery|
+|Windows Command Prompt|	Obtaining local network configuration|
 
 
 
@@ -390,7 +391,7 @@ Zenmap presented the scan results through a graphical interface, making it easie
 Network discovery is particularly useful from a defensive perspective. Administrators can compare discovered devices with an approved asset inventory. An unfamiliar device may indicate a configuration problem, an unmanaged system, or another security issue requiring investigation.
 
 
-# Risk Assessment
+# 5 Risk Assessment/ Impact
 
 The information collected during reconnaissance can be categorized according to its potential security significance.
 
@@ -408,7 +409,7 @@ The information collected during reconnaissance can be categorized according to 
 
 These ratings should be treated as preliminary observations rather than confirmed vulnerabilities. Reconnaissance primarily identifies information that could be useful during a later assessment. Additional authorized testing is required before determining whether a specific weakness can actually be exploited.
 
-# Recommendations
+# 6 Recommendations
 
 Based on the reconnaissance and network-discovery exercises, the following defensive measures are recommended:
 
@@ -425,7 +426,7 @@ Based on the reconnaissance and network-discovery exercises, the following defen
 11. Keep network diagrams and asset documentation current.</br>
 12. Perform penetration-testing activities only when appropriate authorization has been obtained.
 
-# Conclusion
+# 7 Conclusion
 
 The practical exercises provided experience with several important stages of penetration testing, particularly reconnaissance, footprinting, passive information gathering, and network discovery.
 
@@ -439,7 +440,7 @@ Overall, the practical strengthened my understanding of the reconnaissance phase
 
 
 
-
+# 8 Evidence Collected
 
 
 ![screenshot]()
