@@ -227,11 +227,12 @@ The purpose of this exercise was not to exploit the discovered systems. Instead,
 |10|https://maths.nuigalway.ie/~rquinlan/linearalgebra/|intitle:index.of "parent directory" mathematics pdf|---|
 
 
-Security Significance
+**Security Significance**
 
-From a defensive perspective, organizations should periodically examine what information about their infrastructure is publicly indexed. Sensitive administrative interfaces, directory listings, documents, cameras, configuration files, or other resources should not be unintentionally exposed through public search engines.
+`From a defensive perspective, organizations should periodically examine what information about their infrastructure is publicly indexed. Sensitive administrative interfaces, directory listings, documents, cameras, configuration files, or other resources should not be unintentionally exposed through public search engines.`
 
-A search-engine result should also not automatically be interpreted as evidence of a vulnerability. Additional verification would be required to determine the actual security impact.
+`A search-engine result should also not automatically be interpreted as evidence of a vulnerability. Additional verification would be required to determine the actual security impact.`
+
 
 # PM4 Information Gathering with theHarvester
 
