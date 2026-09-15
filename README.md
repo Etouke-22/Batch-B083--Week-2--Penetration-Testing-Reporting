@@ -277,6 +277,23 @@ A broader search can be performed using multiple available sources:
 ```bash
 > theHarvester -d microsoft.com -l 50 -b all
 ```
+| Field | Value |
+|---|---|
+| **Target Domain** | Microsoft.com |
+| **Data Source** | All sources available |
+
+
+**Major Findings**
+
+| Finding | Result |
+|---|---|
+|**ASNs Found**|6|
+|**Interesting URLs**|1|
+|**IP Addresses  Found**|	23
+|**Email Addresses Found**| 0|
+|**People Found**|	0
+|**Hosts Found**|	1410|
+|**LinkedIn Users**|0|
 
 
 Using several sources can produce a substantially broader view of an organization's external footprint.
