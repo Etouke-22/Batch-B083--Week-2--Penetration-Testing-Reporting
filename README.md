@@ -92,11 +92,12 @@ The practical made use of several security and network-analysis tools.
 - WAF detection
 
 
-# PM1  Reconnaissance and Footprinting
+# 4. Activities Performed
+## 4.1 Reconnaissance and Footprinting
 
-## WHOIS Enumeration
+### 4.1.1 WHOIS Enumeration
 
-WHOIS was used to obtain publicly available registration information associated with the authorized domain.
+`WHOIS` was used to obtain publicly available registration information associated with the authorized domain.
 
 The command used was:
 
@@ -108,9 +109,9 @@ The output provided information such as the registrar, registration dates, domai
 
 This information is useful during reconnaissance because it provides an initial picture of how a domain is registered and which external infrastructure is associated with it. Although registration information is not normally considered a vulnerability by itself, it can contribute to an attacker's understanding of the organization's external presence.
 
-## DNS Resolution with Nslookup
+### 4.1.2 DNS Resolution with Nslookup
 
-Nslookup was used to determine the IP address associated with the target domain.
+`Nslookup` was used to determine the IP address associated with the target domain.
 
 
 ```bash
@@ -121,9 +122,9 @@ The resulting DNS information showed the address associated with the domain and 
 
 From a penetration-testing perspective, DNS resolution is an important early step because it identifies the network destination associated with an externally accessible service. This information can subsequently be used during authorized assessment activities.
 
-## HTTP Header Examination
+### 4.1.3 HTTP Header Examination
 
-cURL was used to inspect the HTTP response returned by the target web server.
+`CURL` was used to inspect the HTTP response returned by the target web server.
 
 
 ```bash
@@ -134,9 +135,9 @@ The response provided information about the HTTP status and various response hea
 
 This demonstrates why organizations should carefully consider which technical details are exposed through HTTP responses. Information disclosed by headers may assist legitimate security testing, but it can also help an attacker fingerprint the technology used by a website.
 
-## Web Application Firewall Detection
+### 4.1.4 Web Application Firewall Detection
 
-Wafw00f was used to determine whether a Web Application Firewall (WAF) was protecting the target.
+`Wafw00f` was used to determine whether a Web Application Firewall (WAF) was protecting the target.
 
 
 ```bash
@@ -147,7 +148,7 @@ The tool identified the WAF technology observed during the test.
 
 The presence of a WAF is an important defensive control because it can inspect and filter potentially malicious web requests. However, detecting a WAF does not demonstrate that an application is completely secure. Proper security testing would still be required to evaluate the effectiveness of the application's defenses.
 
-## DNS Enumeration
+### 4.1.5 DNS Enumeration
 
 DNSRecon was used to collect publicly available DNS information.
 
@@ -161,7 +162,7 @@ The enumeration provided records associated with the domain, such as A, AAAA, MX
 
 DNS records can reveal information about an organization's infrastructure, including web servers, mail servers, name servers, and other services. Consequently, unnecessary or outdated DNS records should be reviewed periodically and removed when they are no longer required.
 
-## Web Technology Fingerprinting
+### 4.1.6 Web Technology Fingerprinting
 
 A web technology fingerprinting tool such as WhatWeb can also be used to identify technologies running on a website.
 
@@ -172,7 +173,7 @@ A web technology fingerprinting tool such as WhatWeb can also be used to identif
 
 Only results that were successfully obtained during the practical should be included in the final report. If the tool fails to produce reliable output, the failed attempt should be documented rather than presenting an assumed result.
 
-# PM2 Google Hacking Database Reconnaissance
+## 4.2 Google Hacking Database Reconnaissance
 
 The Google Hacking Database was examined to understand how search engines can unintentionally expose publicly accessible resources.
 
@@ -181,8 +182,8 @@ Search operators, commonly referred to as Google dorks, can be used to narrow se
 The purpose of this exercise was not to exploit the discovered systems. Instead, it demonstrated how information that has already been indexed publicly may provide useful intelligence during reconnaissance.
 
 
-### Task 1 — Publicly Accessible Security Cameras
-|#|Link|Dork|Username/Password|
+### 4.2.1 Task 1 — Publicly Accessible Security Cameras
+|NO.|Link|Dork|Username/Password|
 |---|------|------|--------|
 |1|http://www.insecam.org/en/view/414256/|intitle:"webcamXP 5"|N/A|
 |2|http://109.233.191.130:8080/|intitle:"webcamXP" inurl:8080|N/A|
@@ -195,7 +196,7 @@ The purpose of this exercise was not to exploit the discovered systems. Instead,
 |9|http://139.64.168.120:8080/|intitle:"webcamxp" "Flash JPEG Stream"|N/A|
 |10|http://109.206.96.249:8080/|inurl:/multi.html intitle:webcam|N/A|
 
-### Task 2 — Mathematics Ebooks in PDF Format
+### 4.2.2 Task 2 — Mathematics Ebooks in PDF Format
 |#|Link|Dork|Username/Password|
 |---|------|------|--------|
 |1|http://erewhon.superkuh.com/library/Math/|intitle:index.of "parent directory" mathematics pdf|---|
