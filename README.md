@@ -217,14 +217,14 @@ The purpose of this exercise was not to exploit the discovered systems. Instead,
 |---|------|------|--------|
 |1|http://erewhon.superkuh.com/library/Math/|intitle:index.of "parent directory" mathematics pdf|---|
 |2|https://www.unm.edu/~megrad/Math/|intitle:index.of "parent directory" mathematics pdf|---|
-|3|https://www.netlib.org/math/docpdf/||---|
-|4|https://education.giakonda.org.uk/Maths/?SD|---|
-|5|http://inis.jinr.ru/sl/vol2/Mathematics/Math.Encyclopedia/Pdf/||---|
-|6|https://www.maths.dur.ac.uk/teaching/Exam/papers/2021/||---|
-|7|
-|8|
-|9|
-|10|
+|3|https://www.netlib.org/math/docpdf/|intitle:index.of "parent directory" mathematics pdf|---|
+|4|https://education.giakonda.org.uk/Maths/?SD|intitle:index.of "parent directory" mathematics pdf|---|
+|5|http://inis.jinr.ru/sl/vol2/Mathematics/Math.Encyclopedia/Pdf/|intitle:index.of "parent directory" mathematics pdf|---|
+|6|https://www.maths.dur.ac.uk/teaching/Exam/papers/2021/|intitle:index.of "parent directory" mathematics pdf|---|
+|7|https://pcwww.liv.ac.uk/maths/|intitle:index.of "parent directory" mathematics pdf|---|
+|8|https://www.maths.dur.ac.uk/papers/2025/|intitle:index.of "parent directory" mathematics pdf|---|
+|9|https://math.dartmouth.edu/~carlp/PDF/|intitle:index.of "parent directory" mathematics pdf|---|
+|10|https://maths.nuigalway.ie/~rquinlan/linearalgebra/|intitle:index.of "parent directory" mathematics pdf|---|
 
 
 Security Significance
