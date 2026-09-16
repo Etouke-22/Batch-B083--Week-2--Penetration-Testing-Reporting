@@ -430,7 +430,7 @@ Overall, the practical strengthened my understanding of the reconnaissance phase
 ![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/main/Screenshot_1.png?raw=true)
 ![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/main/Screenshot_2.png?raw=true)
 ![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/main/Screenshot_3.png?raw=true)
-![screenshot]()
+![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/main/Screenshot_4.png?raw=true)
 ![screenshot]()
 ![screenshot]()
 ![screenshot]()
