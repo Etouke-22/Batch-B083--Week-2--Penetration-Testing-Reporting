@@ -22,8 +22,7 @@
 
 ## Modules Completed
 - `W2-PM 1` — Multiple Kali Tools
-- `W2-PM 2` — Attack with GHDB
-- `W2-PM 3` — 
+- `W2-PM 2` — Attack with GHDB 
 - `W2-PM 4` — Attack with theHarverster
 - `W2-PM 5` — Zenmap/Nmamp Enumeration
   
