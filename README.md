@@ -217,7 +217,7 @@ The purpose of this exercise was not to exploit the discovered systems. Instead,
 `A search-engine result should also not automatically be interpreted as evidence of a vulnerability. Additional verification would be required to determine the actual security impact.`
 
 
-# PM4 Information Gathering with theHarvester
+# 4.3 Information Gathering with theHarvester
 
 TheHarvester was used to demonstrate passive information gathering from publicly available sources.
 
@@ -309,7 +309,7 @@ $sudo python ./theHarvester.py
 
 
 
-# PM5 Network Discovery with Zenmap
+# 4.4 Network Discovery with Zenmap
 
 For this activity, zenmap was used to examine an authorized local network and identify active devices.
 
@@ -425,7 +425,7 @@ Overall, the practical strengthened my understanding of the reconnaissance phase
 # 8 Evidence Collected
 
 
-![screenshot]()
+![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/571c620a4529387317552d1d5ded6c46594a89e1/Screenshot%20i.png)
 ![screenshot]()
 ![screenshot]()
 ![screenshot]()
