@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/40a40189-79bd-473f-9e84-b1671a757722" /># Batch-B083--Week-2--Penetration-Testing-Reporting
+# Batch-B083--Week-2--Penetration-Testing-Reporting
 
 ### Week 2 | Cybersecurity Internship | Networkwalks
 
@@ -434,8 +434,9 @@ Overall, the practical strengthened my understanding of the reconnaissance phase
 ![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/main/Screenshot_5.png?raw=true)
 ![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/main/Screenshot_6.png?raw=true)
 ![screenshot](![Uploading image.png…](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/46a42edb-85a2-402e-8535-124db9de4a2b" />)
+![screenshot](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/40a40189-79bd-473f-9e84-b1671a757722" />)
 ![screenshot]()
-![screenshot]()
-![screenshot]()
+![screenshot](https://github.com/Etouke-22/Batch-B083--Week-2--Penetration-Testing-Reporting/blob/main/Screenshot_III.png?raw=true)
+
 
 
